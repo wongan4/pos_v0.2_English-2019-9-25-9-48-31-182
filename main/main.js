@@ -1,5 +1,12 @@
 'use strict';
 
+const NAME = "name"
+const UNIT = "unit"
+const PRICE = "price"
+const BARCODE = "barcode"
+const SUBTOTAL = "subtotal"
+
+
 function printReceipt(barcodes) {
   let aggregatedBarcodes = aggregateBarcode(barcodes);
   let aggregatedItems = mapBarcodesToItems(aggregatedBarcodes);
